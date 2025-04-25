@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour
 		isFinished = false;
 
 		// Move the player to the spawn point, and allow it to move.
-		PositionPlayer();
 		fpsController.enabled = true;
 	}
 
@@ -51,14 +50,6 @@ public class GameManager : MonoBehaviour
 		{
 			elapsedTime = elapsedTime + Time.deltaTime;
 		}
-	}
-
-
-	//Runs when the player needs to be positioned back at the spawn point
-	public void PositionPlayer()
-	{
-		player.transform.position = spawnPoint.position;
-		player.transform.rotation = spawnPoint.rotation;
 	}
 
 
