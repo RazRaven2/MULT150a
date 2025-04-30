@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class PrefabGenerator : MonoBehaviour
 {
-    public GameObject prefab;
-
+     public GameObject prefab; // Assign your street lamp prefab in the Inspector
+    public int lampCount = 10;
+    public float spacing = 5f; // Distance between lamps
     // Start is called before the first frame update
-    void Start()
+   void Start()
     {
-        
+        for (int i = 0; i < lampCount; i++)
+        {
+            Vector3 spawnPosition = new Vector3(15, 0, (i * spacing)-15); // Position lamps in a line along X-axis
+            Instantiate(prefab, spawnPosition, Quaternion.identity);
+        }
     }
-
     // Update is called once per frame
     void Update()
     {
