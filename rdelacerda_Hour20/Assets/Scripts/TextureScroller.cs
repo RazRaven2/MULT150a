@@ -17,6 +17,12 @@ public class TextureScroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Increase Offset based on time
+        offset += Time.deltaTime * speed;
+        //Keep offset Between 0 and 1
+        if (offset > 1)
+            offset -= 1;
+        //Apply the offset to the material
+        renderer.material.mainTextureOffset = new Vector2(0, offset);
     }
 }
