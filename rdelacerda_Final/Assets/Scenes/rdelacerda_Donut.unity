@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1505237367}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: LoadGame
+        m_MethodName: LoadStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -562,6 +562,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362562665}
   m_CullTransparentMesh: 1
+--- !u!1 &423901164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3159082350196149448, guid: 605466d2f6cb4b346bd3a940ffe8e178, type: 3}
+  m_PrefabInstance: {fileID: 1688383410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &423901170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423901164}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f61f1d417eb20e418ca72f951437991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  moveSpeed: 20
+  timeAmount: 1.5
 --- !u!1 &569940858
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,9 +745,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'How long can you last?
-
-    Good Luck...'
+  m_text: "Modifications:\r\n1. Removed store assets.\r\n2. Adjusted Skybox\r\n3.
+    added fog\r\n4. created a spike wall prefabe for obstacle\r\n5. Changed wall
+    texture and applied scrolling effect\r\n6. Added a particle effect to simulate
+    fog clouds.\r\n    size over time, color, orientation, and a couple other parameters
+    were adjusted.\r\n7. modified light\r\n8. wall variant created\r\n9. walls change
+    to random colors every 10 seconds achieved\r\n10. Lastly the objects are expandable
+    for added more objects. Not a change but it took a lot to figure out."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -790,7 +814,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -803.0999, y: -12.536873, z: 418.10312, w: 0}
+  m_margin: {x: -568.7852, y: -395.95724, z: 340.0475, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -997,7 +1021,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gauntlet Runner
+  m_text: 'Donut
+
+    Runner'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1133,6 +1159,14 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: rdelacerda_Final
       objectReference: {fileID: 0}
+    - target: {fileID: 11485492, guid: ccd0e1b10a61c449083a20f4bdd95a05, type: 3}
+      propertyPath: targetObject
+      value: 
+      objectReference: {fileID: 423901164}
+    - target: {fileID: 11485492, guid: ccd0e1b10a61c449083a20f4bdd95a05, type: 3}
+      propertyPath: scriptToEnable
+      value: 
+      objectReference: {fileID: 423901170}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccd0e1b10a61c449083a20f4bdd95a05, type: 3}
 --- !u!114 &1505237367 stripped
@@ -1215,10 +1249,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3159082350196149449, guid: 605466d2f6cb4b346bd3a940ffe8e178, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5228577785482758498, guid: 605466d2f6cb4b346bd3a940ffe8e178, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
