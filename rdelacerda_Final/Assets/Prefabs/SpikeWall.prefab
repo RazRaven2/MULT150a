@@ -79,7 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
   moveSpeed: 20
-  timeAmount: -0.5
+  timeAmount: -1
 --- !u!108 &3059694749192886159
 Light:
   m_ObjectHideFlags: 0

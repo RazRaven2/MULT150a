@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/rdelacerda_Donut.unity
+    guid: eade0ac14f2adb947b002d19aa8ab47c
+  - enabled: 1
+    path: Assets/Scenes/rdelacerda_Final.unity
+    guid: 7bf55b235e897ca40bb6f553bd3e5283
   m_configObjects: {}
