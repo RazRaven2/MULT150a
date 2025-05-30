@@ -751,7 +751,7 @@ MonoBehaviour:
     fog clouds.\r\n    size over time, color, orientation, and a couple other parameters
     were adjusted.\r\n7. modified light\r\n8. wall variant created\r\n9. walls change
     to random colors every 10 seconds achieved\r\n10. Lastly the objects are expandable
-    for added more objects. Not a change but it took a lot to figure out."
+    for adding more objects. Not a change but it took a lot to figure out."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1187,6 +1187,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4590816128258898161, guid: 605466d2f6cb4b346bd3a940ffe8e178, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2592183944152201626, guid: 605466d2f6cb4b346bd3a940ffe8e178, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1251,7 +1255,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4590816128258898161, guid: 605466d2f6cb4b346bd3a940ffe8e178, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 605466d2f6cb4b346bd3a940ffe8e178, type: 3}
 --- !u!1 &1813436833
 GameObject:
